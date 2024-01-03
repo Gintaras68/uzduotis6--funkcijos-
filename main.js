@@ -30,8 +30,8 @@ console.log('\n-----------------    4    --------------------');
 
 initials('Gintaras', 'Misevičius');
 
-function initials(fName, sName) {
-  console.log('Žmogaus ' + fName + ' ' + sName + ' inicialai: ' + fName.charAt(0).toUpperCase() + sName.charAt(0).toUpperCase());
+function initials(firstName, secondName) {
+  console.log('Žmogaus ' + firstName + ' ' + secondName + ' inicialai: ' + firstName.charAt(0).toUpperCase() + secondName.charAt(0).toUpperCase());
 }
 
 
@@ -46,10 +46,10 @@ function numberToHTML(number) {
 
 console.log('\n-----------------    7    --------------------');
 
-let nuo = 5;
-let iki = 25;
+let fromNumber = 5;
+let toNumber = 25;
 for (let i = 0; i < 10; i++) {
-  console.log( (i + 1) + ' skaičius nuo ' + nuo + ' iki ' + iki + ' : ' + randomNumber(5, 25));
+  console.log( (i + 1) + ' skaičius nuo ' + fromNumber + ' iki ' + toNumber + ' : ' + randomNumber(5, 25));
 }
 
 function randomNumber(min = 0, max = 1) {
@@ -85,9 +85,9 @@ function tenTags() {
 
 console.log('\n--------  Vidutinis  1    --------------------');
 
-let skaicius = 12;
-let laipsnis = 6;
-console.log('Skaičius ' + skaicius + ' keliamas ' + laipsnis + ' laipsniu ir gaunasi ' + exp(skaicius, laipsnis));
+let number = 12;
+let degree = 6;
+console.log('Skaičius ' + number + ' keliamas ' + degree + ' laipsniu ir gaunasi ' + exp(number, degree));
 
 function exp(number, indi) {
   let rezult = number;
@@ -147,7 +147,6 @@ for (let i = 0; i < result.length; i++) {
   const symbol = result[i];
   
   if (isNaN(symbol)) {
-    // console.log('tai raide');
     if (html.length > 0) {
       headerText(html, 1);
       html = '';
@@ -336,7 +335,7 @@ while (averagePrimary(array10) < 50) {
 }
 console.log(array10);
 
-// paskaičiuojame pirmiių vidurkį
+// paskaičiuojame pirminių vidurkį
 function averagePrimary(array) {
   let summ = 0;
   let count = 0;
