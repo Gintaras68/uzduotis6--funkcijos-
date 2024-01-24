@@ -30,3 +30,13 @@ h1, h2, h3, h4, h5, h6 {
   min-height: 20px;
   text-align: center;
 }
+
+h2 {
+  text-align: left;
+  margin-left: 30px;
+}
+
+.sunkus {
+  border: 1px solid blue;
+  border-radius: 5px;
+}
